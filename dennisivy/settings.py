@@ -23,10 +23,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'hrj48*mobkzo)s6q+2wfqcg=_=@5c38n&sb4_vlp#bb^zyp_pi'
 
+
+import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -149,8 +153,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = "YOU_EMAIL"
-EMAIL_HOST_PASSWORD = 'YOU_EMAIL_PASSWORD'
+EMAIL_HOST_USER = "azimovu55@gmail.com"
+EMAIL_HOST_PASSWORD = 'Alinaka2'
 
 
 CKEDITOR_UPLOAD_PATH = 'uploads/'
