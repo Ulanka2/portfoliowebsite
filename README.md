@@ -16,4 +16,3 @@ GETTING STARTED
     
 ![](static/images/personal-blog.jpg)
   
-passport for azimovu55 adminka2
